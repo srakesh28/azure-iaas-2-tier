@@ -46,7 +46,7 @@ Step 4) Deploy Network resources
 
 wget https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step1-network/azuredeploynet-parameters.json --no-check-certificate
 
-az group deployment create -g demo1 --template-uri https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step1-network/azuredeploynet.json --parameters @azuredeploy-netparameters2.json
+az group deployment create -g demo1 --template-uri https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step1-network/azuredeploynet.json --parameters @azuredeploynet-parameters.json
 
 Step 5) Deploy VM resources 
 
