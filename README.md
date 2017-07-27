@@ -1,9 +1,9 @@
 # Azure Arm Templates IaaSv2 - Vnet's to VM's
 <html>
 
-This Azure Arm Template walks you through 3 Simple Steps to Deploy End-to-End Azure Environment on Latest IaaS V2 from Virtual Network & Virtual Machines to Load Balancer.
+This Azure Arm Template walks you through few Simple Steps to Deploy End-to-End Azure Environment on Latest IaaS V2 from Virtual Network & Virtual Machines to Load Balancer.
 Start from Step1 to Step3 and you will end up with design as shown below, in a fully automated fashion and provides best practice around deploying your IaaS v2 Infrastructure on Azure.
-![ScreenShot](https://github.com/srakesh28/azure-iaasv2-arm/blob/master/IaaSv2-new.jpg)
+![ScreenShot](https://github.com/srakesh28/azure-iaasv2-arm/blob/master/IaaS-2-tier.jpg)
 
 
 ## Below are Steps for End-to-End Deployment using  Azure CLI 2.0, this template uses latest Managed Disk, Managed AS, LB and Custom Scripts Extentions
@@ -56,7 +56,7 @@ wget https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step2-
 
 az group deployment create -g demo1 --template-uri https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step2-linuxvm/azuredeployvms.json --parameters @azuredeployvms-parameters.json
 
-Step4) Deploy LB 
+Step 6) Deploy LB 
 
 wget https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step3-lb/azuredeploylb-parameters.json --no-check-certificate
 
