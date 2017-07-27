@@ -60,7 +60,7 @@ Step 6) Deploy LB
 
 wget https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step3-lb/azuredeploylb-parameters.json --no-check-certificate
 
-az group deployment create -g demo1 --template-uri https://raw.githubusercontent.com/srakesh28/aazure-iaas-2-tier/master/step3-lb/azuredeploylb.json
+az group deployment create -g demo1 --template-uri https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step3-lb/azuredeploylb.json
 
 Step 6) Validate output in Azure Portal for Resources
 
