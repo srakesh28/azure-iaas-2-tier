@@ -48,6 +48,11 @@ wget https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step1-
 
 az group deployment create -g demo1 --template-uri https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step1-network/azuredeploynet.json --parameters @azuredeploynet-parameters.json
 
+<a> href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsrakesh28%2Fazure-iaas-2-tier%2Fmaster%2Fstep1-network%2Fazuredeploynet.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+
+
 Step 5) Deploy VM resources 
 
 Deplopy VM's with Managed Disks
@@ -56,11 +61,20 @@ wget https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step2-
 
 az group deployment create -g demo1 --template-uri https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step2-linuxvm/azuredeployvms.json --parameters @azuredeployvms-parameters.json
 
+<a> href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsrakesh28%2Fazure-iaas-2-tier%2Fmaster%2Fstep2-linuxvm%2Fazuredeployvms.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+
+
 Step 6) Deploy LB 
 
 wget https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step3-lb/azuredeploylb-parameters.json --no-check-certificate
 
 az group deployment create -g demo1 --template-uri https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step3-lb/azuredeploylb.json
+
+<a> href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsrakesh28%2Fazure-iaas-2-tier%2Fmaster%2Fstep3-lb%2Fazuredeploylb.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
 
 Step 6) Validate output in Azure Portal for Resources
 
