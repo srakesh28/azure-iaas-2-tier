@@ -54,7 +54,7 @@ Deplopy VM's with Managed Disks
 
 wget https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step2-linuxvm/azuredeployvms-parameters.json --no-check-certificate
 
-az group deployment create -g demo1 --template-uri https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step2-linuxvm/azuredeployvms.json --parameters @azuredeploy-md-parameters.json
+az group deployment create -g demo1 --template-uri https://raw.githubusercontent.com/srakesh28/azure-iaas-2-tier/master/step2-linuxvm/azuredeployvms.json --parameters @azuredeployvms-parameters.json
 
 Step4) Deploy LB 
 
